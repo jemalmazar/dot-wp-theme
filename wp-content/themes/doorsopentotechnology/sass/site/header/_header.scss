@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+## Header Styles
+--------------------------------------------------------------*/
+
+.site-header {
+    background: #333333;
+    width: 100%;
+    padding: 0.25rem;
+
+    @media screen and (min-width: $query__small) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    width: 3.5rem;
+
+     @media screen and (min-width: $query__medium) {
+        width: 5rem;
+     }
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.menu-item {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+
+    a { color: #FFFFFF; }
+    &:hover { text-decoration: underline; }
+    
+    @media screen and (min-width: $query__medium) {
+        font-size: 2rem;
+        padding: 0 2rem;
+     }
+}

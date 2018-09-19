@@ -26,7 +26,8 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
+			<img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/images/DOT.png"" alt="Doors Open to Technology Logo">
+			<!-- <?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
@@ -41,7 +42,7 @@
 			if ( $doorsopentotechnology_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $doorsopentotechnology_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			<?php endif; ?> -->
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">

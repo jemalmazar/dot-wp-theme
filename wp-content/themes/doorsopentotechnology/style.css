@@ -688,30 +688,6 @@ a {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-  content: "";
-  display: table;
-  table-layout: fixed; }
-
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-  clear: both; }
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -724,6 +700,61 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header Styles
+--------------------------------------------------------------*/
+.site-header {
+  background: #333333;
+  width: 100%;
+  padding: 0.25rem; }
+  @media screen and (min-width: 600px) {
+    .site-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0.5rem; } }
+
+.site-branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3.5rem; }
+  @media screen and (min-width: 900px) {
+    .site-branding {
+      width: 5rem; } }
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto; }
+
+.menu-item {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 0.5rem; }
+  .menu-item a {
+    color: #FFFFFF; }
+  .menu-item:hover {
+    text-decoration: underline; }
+  @media screen and (min-width: 900px) {
+    .menu-item {
+      font-size: 2rem;
+      padding: 0 2rem; } }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
