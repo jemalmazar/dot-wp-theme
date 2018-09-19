@@ -756,6 +756,32 @@ a {
       padding: 0 2rem; } }
 
 /*--------------------------------------------------------------
+## Hero
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Hero Styles
+--------------------------------------------------------------*/
+.hero-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), center/cover no-repeat url("./images/vr.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), center/cover no-repeat url("./images/vr.jpg");
+  height: 50vh; }
+
+.hero-logo {
+  width: 18rem; }
+  @media screen and (min-width: 600px) {
+    .hero-logo {
+      width: 35rem; } }
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {

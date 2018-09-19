@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+## Hero Styles
+--------------------------------------------------------------*/
+
+.hero-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), 
+                center / cover no-repeat url("./images/vr.jpg");
+    height: 50vh;
+}
+
+.hero-logo {
+    width: 18rem;
+
+    @media screen and (min-width: $query__small) {
+        width: 35rem;
+    }
+}

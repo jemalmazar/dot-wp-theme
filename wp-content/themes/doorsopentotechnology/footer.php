@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+		<!-- <div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'doorsopentotechnology' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
@@ -26,7 +26,7 @@
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'doorsopentotechnology' ), 'doorsopentotechnology', '<a href="https://jemalmazar.github.io/">Jeremiah Almazar</a>' );
 				?>
-		</div><!-- .site-info -->
+		</div>.site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
