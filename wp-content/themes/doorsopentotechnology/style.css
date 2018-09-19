@@ -827,6 +827,49 @@ a {
     .about-p2 {
       max-width: 750px; } }
 
+.hero-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), center/cover no-repeat url("./images/ms-treestair.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), center/cover no-repeat url("./images/ms-treestair.jpg");
+  height: 50vh; }
+
+.hero-logo-events {
+  width: 18rem;
+  padding: 2rem 0; }
+  @media screen and (min-width: 600px) {
+    .hero-logo-events {
+      width: 35rem; } }
+
+.event-details-container {
+  text-align: center;
+  color: #FFFFFF; }
+
+.event-date,
+.event-location {
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 3px 3px 3px #000000; }
+  @media screen and (min-width: 600px) {
+    .event-date,
+    .event-location {
+      font-size: 1.25rem; } }
+
+hr.style1 {
+  border-top: 1px solid #8c8b8b;
+  width: 80vw; }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -944,6 +987,10 @@ a {
     max-width: 100%;
     -o-object-fit: contain;
        object-fit: contain; }
+
+.sched-agenda {
+  width: 80vw;
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 ## Comments

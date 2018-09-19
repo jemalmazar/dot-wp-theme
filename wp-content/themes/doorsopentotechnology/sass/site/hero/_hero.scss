@@ -60,3 +60,43 @@
         max-width: 750px;
     }
 }
+
+.hero-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), 
+                center / cover no-repeat url("./images/ms-treestair.jpg");
+    height: 50vh;
+}
+
+.hero-logo-events {
+    width: 18rem;
+    padding: 2rem 0;
+
+    @media screen and (min-width: $query__small) {
+        width: 35rem;
+    }
+}
+
+.event-details-container {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.event-date,
+.event-location {
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 3px 3px 3px #000000;
+
+	@media screen and (min-width: $query__small) {
+		font-size: 1.25rem;
+	}
+}
+
+hr.style1{
+    border-top: 1px solid #8c8b8b;
+    width: 80vw;
+}
