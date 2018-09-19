@@ -778,6 +778,55 @@ a {
     .hero-logo {
       width: 35rem; } }
 
+.hero-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), center/cover no-repeat url("./images/arduino-piano.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), center/cover no-repeat url("./images/arduino-piano.jpg");
+  height: 100vh; }
+  @media screen and (min-width: 900px) {
+    .hero-about {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.hero-logo-about {
+  padding: 1.5rem 0;
+  margin: 0 1.5rem;
+  width: 12rem; }
+  @media screen and (min-width: 600px) {
+    .hero-logo-about {
+      width: 35rem; } }
+
+.about-p1,
+.about-p2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-shadow: 3px 3px 3px #000000;
+  padding: 0.25rem 2.5rem;
+  margin: 0; }
+  @media screen and (min-width: 600px) {
+    .about-p1,
+    .about-p2 {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 900px) {
+    .about-p1,
+    .about-p2 {
+      max-width: 750px; } }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -800,7 +849,7 @@ a {
   margin: 0 0 1.5em; }
 
 .container {
-  max-width: 1024px;
+  max-width: 1000px;
   margin: 0 auto; }
 
 .dot-paragraph {
