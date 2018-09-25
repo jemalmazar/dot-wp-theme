@@ -12,7 +12,7 @@ get_header(); ?>
                     <img class="hero-logo-events" src="<?php echo get_template_directory_uri(); ?>/images/DOT_Tagline_Wh.png" alt="Doors Open to Technology Logo with tagline underneath">
                 
                     <div class="event-details-container">
-                        <p class="event-date">October 26th, 2018</p>
+                        <p class="event-date">October 25th, 2018</p>
 				        <p class="event-location">Vancouver, British Columbia</p>
                     </div><!-- .event-details-container -->
                 </div><!-- .hero-events -->

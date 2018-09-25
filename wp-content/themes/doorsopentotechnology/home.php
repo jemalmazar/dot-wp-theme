@@ -28,7 +28,7 @@ get_header();
 
 			<div class="next-event-container container">
 				<h2 class="next-event-heading">Next Event</h2>
-				<p class="next-event-date">October 26th, 2018</p>
+				<p class="next-event-date">October 25th, 2018</p>
 				<p class="next-event-location">Vancouver, British Columbia</p>
 			</div>
 
@@ -36,14 +36,16 @@ get_header();
 				<h2 class="featured-sponsors-heading">Featured Sponsors</h2>
 				<ul class="sponsors-list">
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/microsoft-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/british-columbia-logo.png" alt=""></li>
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/sony-logo.png" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/bc_tech_association-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/SAP-logo.svg" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/lux-insights-logo.png" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/bc-hydro-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/inventa-logo.png" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/absolute-logo.png" alt=""></li>
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/SAP-logo.svg" alt=""></li>
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/national-logo.jpg" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/truecalling-logo.png" alt=""></li>
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/inventa-logo.png" alt=""></li>
+					
+					
 				</ul>		
 
 			</div>
