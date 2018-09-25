@@ -771,6 +771,9 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), center/cover no-repeat url("./images/vr.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), center/cover no-repeat url("./images/vr.jpg");
   height: 50vh; }
+  @media screen and (min-width: 600px) {
+    .hero-home {
+      height: 70vh; } }
 
 .hero-logo {
   width: 18rem; }
@@ -844,6 +847,9 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), center/cover no-repeat url("./images/ms-treestair.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), center/cover no-repeat url("./images/ms-treestair.jpg");
   height: 50vh; }
+  @media screen and (min-width: 600px) {
+    .hero-events {
+      height: 70vh; } }
 
 .hero-logo-events {
   width: 18rem;
