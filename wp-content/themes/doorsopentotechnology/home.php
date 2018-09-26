@@ -36,7 +36,7 @@ get_header();
 				<h2 class="featured-sponsors-heading">Featured Sponsors</h2>
 				<ul class="sponsors-list">
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/microsoft-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/sony-logo.png" alt=""></li>
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/sony-imageworks-logo.png" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/bc_tech_association-logo.png" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/bc-hydro-logo.png" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/absolute-logo.png" alt=""></li>
