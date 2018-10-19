@@ -23,6 +23,10 @@ get_header(); ?>
                 
                 <hr class="style1">
 
+                <div class="next-event-container container">
+                    <h2 class="next-event-heading">DOT | Building a Diverse Tech Sector</h2>
+                </div>
+
                 <div class="sched-agenda">
                     <a id="sched-embed" href="//doorsopentotechnology2018.sched.com/" data-sched-sidebar="no">View the Doors Open to Technology schedule &amp; directory.</a>
                     <script type="text/javascript" src="//doorsopentotechnology2018.sched.com/js/embed.js"></script>

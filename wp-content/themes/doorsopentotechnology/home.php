@@ -43,9 +43,10 @@ get_header();
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/SAP-logo.svg" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/national-logo.jpg" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/truecalling-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/inventa-logo.png" alt=""></li>
-					
-					
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/witw-logo.png" alt=""></li>
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/loi-logo.png" alt=""></li>
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/graphic-impressions-logo.png" alt=""></li>
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/inventa-logo.png" alt=""></li>	
 				</ul>		
 
 			</div>
