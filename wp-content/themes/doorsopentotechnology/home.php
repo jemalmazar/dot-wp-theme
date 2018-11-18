@@ -58,6 +58,12 @@ get_header();
 				</ul>		
 
 			</div>
+
+			<section class="get-involved-container content-wrapper">
+				<h2 class="get-involved-heading">Get Involved</h2>
+				<p class="get-involved-paragraph">Become a sponsor</p>
+				<a href="mailto:dot@inventaworld.com" class="get-involved-cta">Click Here</a>
+			</section>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->

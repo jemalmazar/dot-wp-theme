@@ -51,15 +51,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ## Structure
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Helper Classes
---------------------------------------------------------------*/
-.content-wrapper {
-  width: 1024px;
-  margin: 0 auto; }
-
-/*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Helper Classes
+--------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  .content-wrapper {
+    width: 1024px;
+    margin: 0 auto; } }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -725,12 +726,29 @@ a {
 /*--------------------------------------------------------------
 # Global Styles
 --------------------------------------------------------------*/
-.next-event-heading, .featured-sponsors-heading, .event-heading {
+.next-event-heading, .featured-sponsors-heading,
+.get-involved-heading {
   color: #05acd4;
   font-size: 2rem;
   text-transform: uppercase;
   padding-bottom: 1rem;
   margin: 0; }
+
+.get-involved-cta {
+  background-color: #05acd4;
+  color: #FFF;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer; }
+  .get-involved-cta:hover {
+    background-color: #05acc1;
+    color: #FFF;
+    text-decoration: underline; }
+  .get-involved-cta:visited {
+    color: #FFF; }
 
 /*--------------------------------------------------------------
 ## Header
@@ -917,24 +935,9 @@ hr.style1 {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.sticky {
-  display: block; }
-
-.hentry {
-  margin: 0 0 1.5em; }
-
-.updated:not(.published) {
-  display: none; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em; }
-
+/*--------------------------------------------------------------
+# Home Page Styles
+--------------------------------------------------------------*/
 .dot-description {
   font-weight: 700;
   padding: 2rem 2.5rem; }
@@ -948,21 +951,24 @@ hr.style1 {
   .dot-description p {
     margin: 0; }
 
-.next-event-container {
+.next-event-container,
+.featured-sponsors-container,
+.get-involved-container {
   text-align: center;
   padding-bottom: 3rem; }
-  .next-event-container p {
-    font-weight: bold;
+  .next-event-container p,
+  .featured-sponsors-container p,
+  .get-involved-container p {
+    font-weight: 700;
     margin: 0; }
     @media screen and (min-width: 600px) {
-      .next-event-container p {
+      .next-event-container p,
+      .featured-sponsors-container p,
+      .get-involved-container p {
         font-size: 1.25rem; } }
 
-.featured-sponsors-container {
-  text-align: center;
-  padding-bottom: 1rem; }
-
-.featured-sponsors-heading {
+.featured-sponsors-heading,
+.get-involved-heading {
   font-size: 1.6rem; }
 
 .sponsors-list {
@@ -1016,9 +1022,34 @@ hr.style1 {
     -o-object-fit: contain;
        object-fit: contain; }
 
+.get-involved-paragraph {
+  padding-bottom: 1.5rem; }
+
+/*--------------------------------------------------------------
+# Single Event Styles
+--------------------------------------------------------------*/
 .sched-agenda {
   width: 80vw;
   margin: 0 auto; }
+
+/*------------------------------------------------------------*/
+.sticky {
+  display: block; }
+
+.hentry {
+  margin: 0 0 1.5em; }
+
+.updated:not(.published) {
+  display: none; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
 
 /*--------------------------------------------------------------
 ## Comments
