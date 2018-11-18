@@ -22,14 +22,22 @@ get_header();
 				<img class="hero-logo" src="<?php echo get_template_directory_uri(); ?>/images/DOT_Tagline_Wh.png" alt="Doors Open to Technology Logo with tagline underneath">
 			</div>
 
-			<p class="dot-paragraph container">
-				Doors Open to Technology events highlight the immense career opportunities available in the growing technology sector in British Columbia. High school students who attend our events leave with new information, inspiration and experiences that help to shape their future career path.
-			</p>
+			<div class="dot-description content-wrapper">
+				<?php
+					echo CFS()->get( 'dot_description' );
+				?>
+			</div>
 
-			<div class="next-event-container container">
-				<h2 class="next-event-heading">Next Event</h2>
-				<p class="next-event-date">October 25th, 2018</p>
-				<p class="next-event-location">Vancouver, British Columbia</p>
+			<div class="next-event-container content-wrapper">
+				<h2 class="next-event-heading">
+					<?php
+						$next_event= CFS()->get_field_info( 'next_event' );
+						echo $next_event['label'];
+					?>
+				</h2>
+				<p>
+					<?php echo CFS()->get( 'next_event' ); ?>
+				</p>
 			</div>
 
 			<div class="featured-sponsors-container container">

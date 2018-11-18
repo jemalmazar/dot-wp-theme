@@ -935,33 +935,28 @@ hr.style1 {
   clear: both;
   margin: 0 0 1.5em; }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto; }
-
-.dot-paragraph {
+.dot-description {
   font-weight: 700;
   padding: 2rem 2.5rem; }
   @media screen and (min-width: 600px) {
-    .dot-paragraph {
+    .dot-description {
       font-size: 1.25rem;
       padding: 4rem 5rem; } }
   @media screen and (min-width: 900px) {
-    .dot-paragraph {
+    .dot-description {
       padding: 4rem 10rem; } }
+  .dot-description p {
+    margin: 0; }
 
 .next-event-container {
   text-align: center;
   padding-bottom: 3rem; }
-
-.next-event-date,
-.next-event-location {
-  font-weight: bold;
-  margin: 0; }
-  @media screen and (min-width: 600px) {
-    .next-event-date,
-    .next-event-location {
-      font-size: 1.25rem; } }
+  .next-event-container p {
+    font-weight: bold;
+    margin: 0; }
+    @media screen and (min-width: 600px) {
+      .next-event-container p {
+        font-size: 1.25rem; } }
 
 .featured-sponsors-container {
   text-align: center;

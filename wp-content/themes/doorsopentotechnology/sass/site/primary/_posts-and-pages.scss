@@ -21,12 +21,12 @@
 	margin: 0 0 1.5em;
 }
 
-.container {
-	max-width: 1000px;
-	margin: 0 auto;
-}
+// .container {
+// 	max-width: 1000px;
+// 	margin: 0 auto;
+// }
 
-.dot-paragraph {
+.dot-description {
 	font-weight: 700;
 	padding: 2rem 2.5rem;
 
@@ -38,25 +38,28 @@
 	@media screen and (min-width: $query__medium) {
 		padding: 4rem 10rem;
 	}
+
+	p {
+		margin: 0;
+	}
 }
 
 .next-event-container {
 	text-align: center;
 	padding-bottom: 3rem;
+
+	p {
+		font-weight: bold;
+		margin: 0;
+
+		@media screen and (min-width: $query__small) {
+			font-size: 1.25rem;
+		}
+	}
 }
 
 .next-event-heading {
 	@extend %base-heading-style;
-}
-
-.next-event-date,
-.next-event-location {
-	font-weight: bold;
-	margin: 0;
-
-	@media screen and (min-width: $query__small) {
-		font-size: 1.25rem;
-	}
 }
 
 .featured-sponsors-container {
