@@ -5,7 +5,8 @@
 .site-header {
     background: $primary-brand-colour;
     width: 100%;
-    padding: 0.25rem;
+    padding: 0.25rem 0 0 0.25rem;
+    max-height: 15vh;
 
     @media screen and (min-width: $query__small) {
         display: flex;

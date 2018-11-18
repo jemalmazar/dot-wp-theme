@@ -759,7 +759,8 @@ a {
 .site-header {
   background: #05acd4;
   width: 100%;
-  padding: 0.25rem; }
+  padding: 0.25rem 0 0 0.25rem;
+  max-height: 15vh; }
   @media screen and (min-width: 600px) {
     .site-header {
       display: -webkit-box;
@@ -843,7 +844,7 @@ a {
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), center/cover no-repeat url("./images/arduino-piano.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), center/cover no-repeat url("./images/arduino-piano.jpg");
-  height: 100vh; }
+  min-height: 91.5vh; }
 
 .about-content {
   display: -webkit-box;

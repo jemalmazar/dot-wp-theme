@@ -2,6 +2,8 @@
 ## Hero Styles
 --------------------------------------------------------------*/
 
+// Home 
+
 .hero-home {
     display: flex;
     justify-content: center;
@@ -23,13 +25,15 @@
     }
 }
 
+// About
+
 .hero-about {
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), 
                 center / cover no-repeat url("./images/arduino-piano.jpg");
-    height: 100vh;
+    min-height: 91.5vh;
 }
 
 .about-content {
@@ -68,6 +72,8 @@
         max-width: 750px;
     }
 }
+
+// Events
 
 .hero-events {
     display: flex;
