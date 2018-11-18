@@ -8,11 +8,11 @@
 
 	@media screen and (min-width: $query__small) {
 		font-size: 1.25rem;
-		padding: 4rem 5rem;
+		padding: 3rem 5rem;
 	}
 
 	@media screen and (min-width: $query__medium) {
-		padding: 4rem 10rem;
+		padding: 3rem 10rem;
 	}
 
 	p {
@@ -20,11 +20,11 @@
 	}
 }
 
-.next-event-container,
-.featured-sponsors-container,
-.get-involved-container {
+.next-event-section,
+.featured-sponsors-section,
+.get-involved-section {
 	text-align: center;
-	padding-bottom: 3rem;
+	padding: 1.25rem 0;
 
 	p {
 		font-weight: 700;
@@ -83,11 +83,11 @@
 }
 
 .get-involved-paragraph {
-	padding-bottom: 1.5rem;
+	padding:0 1.5rem 1.5rem;
 }
 
 .get-involved-cta {
-	@extend %base-button-style
+	@extend %base-button-style;
 }
 
 /*--------------------------------------------------------------

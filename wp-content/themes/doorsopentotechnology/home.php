@@ -18,17 +18,17 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<div class="hero-home">
+			<section class="hero-home">
 				<img class="hero-logo" src="<?php echo get_template_directory_uri(); ?>/images/DOT_Tagline_Wh.png" alt="Doors Open to Technology Logo with tagline underneath">
-			</div>
+			</section>
 
-			<div class="dot-description content-wrapper">
+			<section class="dot-description content-wrapper">
 				<?php
 					echo CFS()->get( 'dot_description' );
 				?>
-			</div>
+			</section>
 
-			<div class="next-event-container content-wrapper">
+			<section class="next-event-section content-wrapper">
 				<h2 class="next-event-heading">
 					<?php
 						$next_event= CFS()->get_field_info( 'next_event' );
@@ -38,9 +38,9 @@ get_header();
 				<p>
 					<?php echo CFS()->get( 'next_event' ); ?>
 				</p>
-			</div>
+			</section>
 
-			<div class="featured-sponsors-container container">
+			<section class="featured-sponsors-section content-wrapper">
 				<h2 class="featured-sponsors-heading">Featured Sponsors</h2>
 				<ul class="sponsors-list">
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/microsoft-logo.png" alt=""></li>
@@ -57,11 +57,11 @@ get_header();
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/inventa-logo.png" alt=""></li>	
 				</ul>		
 
-			</div>
+			</section>
 
-			<section class="get-involved-container content-wrapper">
+			<section class="get-involved-section content-wrapper">
 				<h2 class="get-involved-heading">Get Involved</h2>
-				<p class="get-involved-paragraph">Become a sponsor</p>
+				<p class="get-involved-paragraph">Want to become a sponsor or attend an event?</p>
 				<a href="mailto:dot@inventaworld.com" class="get-involved-cta">Click Here</a>
 			</section>
 			

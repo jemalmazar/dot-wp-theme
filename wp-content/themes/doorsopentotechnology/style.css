@@ -820,10 +820,10 @@ a {
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), center/cover no-repeat url("./images/vr.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), center/cover no-repeat url("./images/vr.jpg");
-  height: 50vh; }
+  min-height: 50vh; }
   @media screen and (min-width: 600px) {
     .hero-home {
-      height: 70vh; } }
+      min-height: 70vh; } }
 
 .hero-logo {
   width: 18rem; }
@@ -944,27 +944,27 @@ hr.style1 {
   @media screen and (min-width: 600px) {
     .dot-description {
       font-size: 1.25rem;
-      padding: 4rem 5rem; } }
+      padding: 3rem 5rem; } }
   @media screen and (min-width: 900px) {
     .dot-description {
-      padding: 4rem 10rem; } }
+      padding: 3rem 10rem; } }
   .dot-description p {
     margin: 0; }
 
-.next-event-container,
-.featured-sponsors-container,
-.get-involved-container {
+.next-event-section,
+.featured-sponsors-section,
+.get-involved-section {
   text-align: center;
-  padding-bottom: 3rem; }
-  .next-event-container p,
-  .featured-sponsors-container p,
-  .get-involved-container p {
+  padding: 1.25rem 0; }
+  .next-event-section p,
+  .featured-sponsors-section p,
+  .get-involved-section p {
     font-weight: 700;
     margin: 0; }
     @media screen and (min-width: 600px) {
-      .next-event-container p,
-      .featured-sponsors-container p,
-      .get-involved-container p {
+      .next-event-section p,
+      .featured-sponsors-section p,
+      .get-involved-section p {
         font-size: 1.25rem; } }
 
 .featured-sponsors-heading,
@@ -1023,7 +1023,7 @@ hr.style1 {
        object-fit: contain; }
 
 .get-involved-paragraph {
-  padding-bottom: 1.5rem; }
+  padding: 0 1.5rem 1.5rem; }
 
 /*--------------------------------------------------------------
 # Single Event Styles
