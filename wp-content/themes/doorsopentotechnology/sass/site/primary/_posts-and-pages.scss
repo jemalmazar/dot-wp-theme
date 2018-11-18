@@ -46,11 +46,7 @@
 }
 
 .next-event-heading {
-	color: #05acc1;
-	text-transform: uppercase;
-	font-size: 2rem;
-	padding-bottom: 1rem;
-	margin: 0;
+	@extend %base-heading-style;
 }
 
 .next-event-date,
@@ -69,11 +65,8 @@
 }
 
 .featured-sponsors-heading {
-	color: #05acc1;
-	text-transform: uppercase;
+	@extend %base-heading-style;
 	font-size: 1.6rem;
-	padding-bottom: 1rem;
-	margin: 0;
 }
 
 .sponsors-list {
@@ -110,6 +103,10 @@
 		max-width: 100%;
 		object-fit: contain;
 	}
+}
+
+.event-heading {
+	@extend %base-heading-style;
 }
 
 .sched-agenda {

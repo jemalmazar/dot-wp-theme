@@ -42,6 +42,25 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Colours
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Structure
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Helper Classes
+--------------------------------------------------------------*/
+.content-wrapper {
+  width: 1024px;
+  margin: 0 auto; }
+
+/*--------------------------------------------------------------
+## Media Queries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -701,13 +720,26 @@ a {
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## Global
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Global Styles
+--------------------------------------------------------------*/
+.next-event-heading, .featured-sponsors-heading, .event-heading {
+  color: #05acd4;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  margin: 0; }
+
+/*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Header Styles
 --------------------------------------------------------------*/
 .site-header {
-  background: #05acc1;
+  background: #05acd4;
   width: 100%;
   padding: 0.25rem; }
   @media screen and (min-width: 600px) {
@@ -922,13 +954,6 @@ hr.style1 {
   text-align: center;
   padding-bottom: 3rem; }
 
-.next-event-heading {
-  color: #05acc1;
-  text-transform: uppercase;
-  font-size: 2rem;
-  padding-bottom: 1rem;
-  margin: 0; }
-
 .next-event-date,
 .next-event-location {
   font-weight: bold;
@@ -943,11 +968,7 @@ hr.style1 {
   padding-bottom: 1rem; }
 
 .featured-sponsors-heading {
-  color: #05acc1;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  padding-bottom: 1rem;
-  margin: 0; }
+  font-size: 1.6rem; }
 
 .sponsors-list {
   display: -webkit-box;

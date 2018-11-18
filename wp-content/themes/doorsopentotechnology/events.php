@@ -24,7 +24,7 @@ get_header(); ?>
                 <hr class="style1">
 
                 <div class="next-event-container container">
-                    <h2 class="next-event-heading">DOT | Building a Diverse Tech Sector</h2>
+                    <h2 class="event-heading">DOT | Building a Diverse Tech Sector</h2>
                 </div>
 
                 <div class="sched-agenda">
