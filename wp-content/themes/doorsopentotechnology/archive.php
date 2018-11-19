@@ -49,24 +49,6 @@ get_header();
 				</div>
 
 			</section>
-			
-
-		
-
-			<!-- <p class="dot-paragraph container">
-				Doors Open to Technology events highlight the immense career opportunities available in the growing technology sector in British Columbia. High school students who attend our events leave with new information, inspiration and experiences that help to shape their future career path.
-			</p>
-			
-			<hr class="style1">
-
-			<div class="next-event-container container">
-				<h2 class="event-heading">DOT | Building a Diverse Tech Sector</h2>
-			</div>
-
-			<div class="sched-agenda">
-				<a id="sched-embed" href="//doorsopentotechnology2018.sched.com/" data-sched-sidebar="no">View the Doors Open to Technology schedule &amp; directory.</a>
-				<script type="text/javascript" src="//doorsopentotechnology2018.sched.com/js/embed.js"></script>
-			</div> -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

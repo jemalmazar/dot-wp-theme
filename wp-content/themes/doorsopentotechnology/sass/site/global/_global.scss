@@ -40,6 +40,10 @@
 
 hr.style1{
     border-top: 1px solid #8c8b8b;
-    width: 50vw;
-    margin: 0 auto;
+    width: 75vw;
+	margin: 0 auto;
+	
+	@media screen and (min-width: $query__medium) {
+		width: 50vw;
+	}
 }

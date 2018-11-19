@@ -752,8 +752,11 @@ a {
 
 hr.style1 {
   border-top: 1px solid #8c8b8b;
-  width: 50vw;
+  width: 75vw;
   margin: 0 auto; }
+  @media screen and (min-width: 900px) {
+    hr.style1 {
+      width: 50vw; } }
 
 /*--------------------------------------------------------------
 ## Header
@@ -1032,6 +1035,9 @@ hr.style1 {
 .events-section {
   text-align: center;
   padding: 1.25rem 0; }
+
+.events-heading {
+  padding: 0 1rem; }
 
 .events-list {
   list-style: none;
