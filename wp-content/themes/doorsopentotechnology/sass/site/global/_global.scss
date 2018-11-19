@@ -13,6 +13,7 @@
 }
 
 // Base Button Style
+
 %base-button-style {
 	background-color: $primary-brand-colour;
     color: #FFF;
@@ -33,4 +34,12 @@
 		color: #FFF;
 	}
 
+}
+
+// Horizontal Line Styles
+
+hr.style1{
+    border-top: 1px solid #8c8b8b;
+    width: 50vw;
+    margin: 0 auto;
 }

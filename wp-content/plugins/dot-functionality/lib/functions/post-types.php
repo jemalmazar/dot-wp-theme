@@ -8,7 +8,7 @@
 // Add your custom post types here...
 
 // Register Event Custom Post Type
-function dot_event_post_type() {
+function events_post_type() {
 
 	$labels = array(
 		'name'                  => 'Events',
@@ -59,7 +59,7 @@ function dot_event_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'dot_event', $args );
+	register_post_type( 'events', $args );
 
 }
-add_action( 'init', 'dot_event_post_type', 0 );
+add_action( 'init', 'events_post_type', 0 );

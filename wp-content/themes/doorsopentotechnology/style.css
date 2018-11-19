@@ -727,7 +727,7 @@ a {
 # Global Styles
 --------------------------------------------------------------*/
 .next-event-heading, .featured-sponsors-heading,
-.get-involved-heading {
+.get-involved-heading, .events-heading {
   color: #05acd4;
   font-size: 2rem;
   text-transform: uppercase;
@@ -749,6 +749,11 @@ a {
     text-decoration: underline; }
   .get-involved-cta:visited {
     color: #FFF; }
+
+hr.style1 {
+  border-top: 1px solid #8c8b8b;
+  width: 50vw;
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 ## Header
@@ -928,11 +933,6 @@ a {
     .event-location {
       font-size: 1.25rem; } }
 
-hr.style1 {
-  border-top: 1px solid #8c8b8b;
-  width: 80vw;
-  margin-bottom: 2.5rem; }
-
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -1025,6 +1025,24 @@ hr.style1 {
 
 .get-involved-paragraph {
   padding: 0 1.5rem 1.5rem; }
+
+/*--------------------------------------------------------------
+# Events Archive Styles
+--------------------------------------------------------------*/
+.events-section {
+  text-align: center;
+  padding: 1.25rem 0; }
+
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.event-wrapper {
+  padding: 1.5rem 0; }
+  .event-wrapper p {
+    font-weight: 700;
+    margin: 0; }
 
 /*--------------------------------------------------------------
 # Single Event Styles

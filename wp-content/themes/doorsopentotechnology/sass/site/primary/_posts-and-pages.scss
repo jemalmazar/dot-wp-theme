@@ -91,6 +91,34 @@
 }
 
 /*--------------------------------------------------------------
+# Events Archive Styles
+--------------------------------------------------------------*/
+
+.events-section {
+	text-align: center;
+	padding: 1.25rem 0;
+}
+
+.events-heading {
+	@extend %base-heading-style;
+}
+
+.events-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.event-wrapper {
+	padding: 1.5rem 0;
+
+	p {
+		font-weight: 700;
+		margin: 0;
+	}
+}
+
+/*--------------------------------------------------------------
 # Single Event Styles
 --------------------------------------------------------------*/
 
