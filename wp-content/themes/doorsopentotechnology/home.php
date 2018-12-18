@@ -43,6 +43,7 @@ get_header();
 			<section class="featured-sponsors-section content-wrapper">
 				<h2 class="featured-sponsors-heading">Featured Sponsors</h2>
 				<ul class="sponsors-list">
+					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/bc-gov-logo.png" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/microsoft-logo.png" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/sony-imageworks-logo.png" alt=""></li>
 					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/bc_tech_association-logo.png" alt=""></li>
@@ -62,7 +63,7 @@ get_header();
 			<section class="get-involved-section content-wrapper">
 				<h2 class="get-involved-heading">Get Involved</h2>
 				<p class="get-involved-paragraph">Want to become a sponsor or attend an event?</p>
-				<a href="mailto:dot@inventaworld.com" class="get-involved-cta">Click Here</a>
+				<a href="mailto:dot@inventaworld.com" class="get-involved-cta" target="_blank">Click Here</a>
 			</section>
 			
 		</main><!-- #main -->
