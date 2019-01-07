@@ -12,6 +12,22 @@
     margin: 0;  
 }
 
+%link-heading-style {
+    a {
+		color: $primary-brand-colour;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding-bottom: 1rem;
+		margin: 0;
+
+		&:hover {
+			color: $secondary-brand-colour;
+			text-decoration: underline;
+		}
+	} 
+}
+
 // Base Button Style
 
 %base-button-style {
@@ -43,7 +59,7 @@ hr.style1{
     width: 75vw;
 	margin: 0 auto;
 	
-	@media screen and (min-width: $query__medium) {
+	@media screen and (min-width: $query__large) {
 		width: 50vw;
 	}
 }

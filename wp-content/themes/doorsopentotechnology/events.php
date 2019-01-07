@@ -27,14 +27,18 @@ get_header(); ?>
 
 						<?php if ( $post !== end($dot_event) ) : ?>
 							<li class="event-wrapper">
-								<h3><?php the_title(); ?></h3>
+								<h3 class="event-title">
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								</h3>
 								<?php the_content(); ?>
 							</li>
 
 							<hr class="style1">
 						<?php else : ?>
 							<li class="event-wrapper">
-								<h3><?php the_title(); ?></h3>
+								<h3 class="event-title">
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								</h3>
 								<?php the_content(); ?>
 							</li>
 						<?php endif; ?>

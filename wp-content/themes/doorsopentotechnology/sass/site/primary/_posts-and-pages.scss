@@ -117,6 +117,38 @@
 		font-weight: 700;
 		margin: 0;
 	}
+
+	@media screen and (min-width: $query__large) {
+		display: flex;
+	}
+}
+
+.event-details {
+	@media screen and (min-width: $query__large) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+	}
+}
+
+.event-title {
+	@extend %link-heading-style;
+	
+	@media screen and (min-width: $query__small) {
+		a { font-size: 1.75rem; }
+	}
+}
+
+.event-pic-wrapper {
+	img {
+		max-width: 75%;
+		margin: 0 auto;
+
+		// @media screen and (min-width: $query__large) {
+		// 	max-width: 75%;
+		// }
+	}
 }
 
 /*--------------------------------------------------------------

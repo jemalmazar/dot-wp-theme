@@ -734,6 +734,17 @@ a {
   padding-bottom: 1rem;
   margin: 0; }
 
+.event-title a {
+  color: #05acd4;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 1rem;
+  margin: 0; }
+  .event-title a:hover {
+    color: #05acc1;
+    text-decoration: underline; }
+
 .get-involved-cta {
   background-color: #05acd4;
   color: #FFF;
@@ -754,7 +765,7 @@ hr.style1 {
   border-top: 1px solid #8c8b8b;
   width: 75vw;
   margin: 0 auto; }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1200px) {
     hr.style1 {
       width: 50vw; } }
 
@@ -1049,6 +1060,33 @@ hr.style1 {
   .event-wrapper p {
     font-weight: 700;
     margin: 0; }
+  @media screen and (min-width: 1200px) {
+    .event-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+@media screen and (min-width: 1200px) {
+  .event-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left; } }
+
+@media screen and (min-width: 600px) {
+  .event-title a {
+    font-size: 1.75rem; } }
+
+.event-pic-wrapper img {
+  max-width: 75%;
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 # Single Event Styles

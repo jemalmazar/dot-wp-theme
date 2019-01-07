@@ -32,15 +32,33 @@ get_header();
 
 						<?php if ( $post !== end($dot_event) ) : ?>
 							<li class="event-wrapper">
-								<h3><?php the_title(); ?></h3>
-								<?php the_content(); ?>
+								<?php if ( has_post_thumbnail() ) : ?>
+									<div class="event-pic-wrapper">
+										<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+									</div>
+								<?php endif; ?>
+								<div class="event-details">
+									<h3 class="event-title">
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									</h3>
+									<?php the_content(); ?>
+								</div>
 							</li>
 
 							<hr class="style1">
 						<?php else : ?>
 							<li class="event-wrapper">
-								<h3><?php the_title(); ?></h3>
-								<?php the_content(); ?>
+								<?php if ( has_post_thumbnail() ) : ?>
+									<div class="event-pic-wrapper">
+										<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+									</div>
+								<?php endif; ?>
+								<div class="event-details">
+									<h3 class="event-title">
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									</h3>
+									<?php the_content(); ?>
+								</div>
 							</li>
 						<?php endif; ?>
 
