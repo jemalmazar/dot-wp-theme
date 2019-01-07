@@ -29,6 +29,23 @@ get_header();
 
 		<h3 class="event-sponsors">Sponsors</h3>
 
+		<?php
+			$args = array( 'post_type' => 'featured_sponsor', 'order' => 'ASC', 'posts_per_page' => -1 );
+			$sponsor = get_posts( $args ); // returns an array of posts
+		?>
+
+		<ul class="sponsors-list">
+			<?php foreach ( $sponsor as $post ) : setup_postdata( $post ); ?>
+
+				<?php if ( has_tag( 'Victoria' ) ) : ?>
+					<li class="sponsor">
+						<?php the_post_thumbnail(); ?>
+					</li>	
+				<?php endif; ?>
+
+			<?php endforeach; wp_reset_postdata(); ?>
+		</ul>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

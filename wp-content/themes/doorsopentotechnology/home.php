@@ -42,20 +42,22 @@ get_header();
 
 			<section class="featured-sponsors-section content-wrapper">
 				<h2 class="featured-sponsors-heading">Featured Sponsors</h2>
+
+				<?php
+					$args = array( 'post_type' => 'featured_sponsor', 'order' => 'ASC', 'posts_per_page' => -1 );
+					$sponsor = get_posts( $args ); // returns an array of posts
+				?>
+
 				<ul class="sponsors-list">
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/bc-gov-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/microsoft-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/sony-imageworks-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/bc_tech_association-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/bc-hydro-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/absolute-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/SAP-logo.svg" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/national-logo.jpg" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/truecalling-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/witw-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/loi-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/graphic-impressions-logo.png" alt=""></li>
-					<li class="sponsor"><img src="<?php echo get_template_directory_uri(); ?>/images/inventa-logo.png" alt=""></li>	
+					<?php foreach ( $sponsor as $post ) : setup_postdata( $post ); ?>
+
+						<?php if ( has_tag( 'Featured' ) ) : ?>
+							<li class="sponsor">
+								<?php the_post_thumbnail(); ?>
+							</li>	
+						<?php endif; ?>
+
+					<?php endforeach; wp_reset_postdata(); ?>
 				</ul>		
 
 			</section>
