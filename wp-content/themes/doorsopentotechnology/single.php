@@ -37,7 +37,13 @@ get_header();
 		<ul class="sponsors-list">
 			<?php foreach ( $sponsor as $post ) : setup_postdata( $post ); ?>
 
-				<?php if ( has_tag( 'Victoria' ) ) : ?>
+				<?php if ( is_single( 'DOT | Victoria' ) && has_tag( 'Victoria' ) ) : ?>
+					<li class="sponsor">
+						<?php the_post_thumbnail(); ?>
+					</li>	
+				<?php endif; ?>
+
+				<?php if ( is_single( 'DOT | Vancouver' ) && has_tag( 'Vancouver' ) ) : ?>
 					<li class="sponsor">
 						<?php the_post_thumbnail(); ?>
 					</li>	
