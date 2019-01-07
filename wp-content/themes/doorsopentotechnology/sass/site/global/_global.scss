@@ -56,10 +56,14 @@
 
 hr.style1{
     border-top: 1px solid #8c8b8b;
-    width: 75vw;
+    width: 65%;
 	margin: 0 auto;
+
+	@media screen and (min-width: $query__medium) {
+		width: 50%;
+	}
 	
 	@media screen and (min-width: $query__large) {
-		width: 50vw;
+		width: 75%;
 	}
 }
