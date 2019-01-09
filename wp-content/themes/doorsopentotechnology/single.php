@@ -27,30 +27,34 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
-		<h3 class="event-sponsors">Sponsors</h3>
+		<section class="sponsors-section content-wrapper">
 
-		<?php
-			$args = array( 'post_type' => 'featured_sponsor', 'order' => 'ASC', 'posts_per_page' => -1 );
-			$sponsor = get_posts( $args ); // returns an array of posts
-		?>
+			<h3 class="event-sponsors">Sponsors</h3>
 
-		<ul class="sponsors-list">
-			<?php foreach ( $sponsor as $post ) : setup_postdata( $post ); ?>
+			<?php
+				$args = array( 'post_type' => 'featured_sponsor', 'order' => 'ASC', 'posts_per_page' => -1 );
+				$sponsor = get_posts( $args ); // returns an array of posts
+			?>
 
-				<?php if ( is_single( 'DOT | Victoria' ) && has_tag( 'Victoria' ) ) : ?>
-					<li class="sponsor">
-						<?php the_post_thumbnail(); ?>
-					</li>	
-				<?php endif; ?>
+			<ul class="sponsors-list">
+				<?php foreach ( $sponsor as $post ) : setup_postdata( $post ); ?>
 
-				<?php if ( is_single( 'DOT | Vancouver' ) && has_tag( 'Vancouver' ) ) : ?>
-					<li class="sponsor">
-						<?php the_post_thumbnail(); ?>
-					</li>	
-				<?php endif; ?>
+					<?php if ( is_single( 'DOT | Victoria' ) && has_tag( 'Victoria' ) ) : ?>
+						<li class="sponsor">
+							<?php the_post_thumbnail(); ?>
+						</li>	
+					<?php endif; ?>
 
-			<?php endforeach; wp_reset_postdata(); ?>
-		</ul>
+					<?php if ( is_single( 'DOT | Vancouver' ) && has_tag( 'Vancouver' ) ) : ?>
+						<li class="sponsor">
+							<?php the_post_thumbnail(); ?>
+						</li>	
+					<?php endif; ?>
+
+				<?php endforeach; wp_reset_postdata(); ?>
+			</ul><!--.sponsors-list -->
+		
+		</section><!--.sponsors-section -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
