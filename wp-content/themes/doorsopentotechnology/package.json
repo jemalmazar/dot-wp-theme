@@ -3,10 +3,12 @@
     "version": "1.0.0",
     "description": "A learning project based on _s",
     "main": "gulpfile.js",
-    "dependencies": {},
+    "dependencies": {
+        "gulp-update": "0.0.2"
+    },
     "devDependencies": {
-        "browser-sync": "^2.18.13",
-        "gulp": "^3.9.1",
+        "browser-sync": "^2.26.3",
+        "gulp": "^4.0.0",
         "gulp-autoprefixer": "^4.0.0",
         "gulp-cssnano": "^2.1.2",
         "gulp-jscs": "^4.0.0",
