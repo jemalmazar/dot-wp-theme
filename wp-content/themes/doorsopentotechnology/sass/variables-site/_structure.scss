@@ -18,7 +18,7 @@ $query__large: 1200px;
 
 .content-wrapper {
 	@media screen and (min-width: $query__large) {
-        width: 1024px;
+    width: 1024px;
 		margin: 0 auto;
-    }
+  }
 }

@@ -689,22 +689,6 @@ a {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -727,7 +711,8 @@ a {
 # Global Styles
 --------------------------------------------------------------*/
 .next-event-heading, .featured-sponsors-heading,
-.get-involved-heading, .events-heading, .entry-title, .event-sponsors {
+.get-involved-heading, .events-heading, .entry-title, .event-sponsors,
+.sched-agenda-heading {
   color: #05acd4;
   font-size: 2rem;
   text-transform: uppercase;
@@ -1112,13 +1097,15 @@ hr.style1 {
     .entry-content {
       font-size: 1rem; } }
 
-.event-sponsors {
+.event-sponsors,
+.sched-agenda-heading {
   font-size: 1.5rem;
   text-align: center;
   padding-bottom: 0;
   padding: 1rem 0; }
   @media screen and (min-width: 900px) {
-    .event-sponsors {
+    .event-sponsors,
+    .sched-agenda-heading {
       font-size: 1.5rem; } }
 
 .post-thumbnail {
@@ -1137,7 +1124,6 @@ hr.style1 {
     width: auto; }
 
 .sched-agenda {
-  width: 80vw;
   margin: 0 auto; }
 
 /*------------------------------------------------------------*/

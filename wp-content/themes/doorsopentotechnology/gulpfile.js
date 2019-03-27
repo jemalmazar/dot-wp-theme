@@ -30,7 +30,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./'))
         .pipe(cssnano())
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('./build/css'));
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('scripts', function () {
@@ -64,11 +64,12 @@ gulp.task('browser-sync', function () {
     browserSync.init(files, {
         proxy: 'localhost/dot-wp-theme',
     });
-});
 
-gulp.task('watch', function () {
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/*.scss', ['sass']).on('change', browserSync.reload);
     gulp.watch('./js/*.js', ['scripts']);
+    gulp.watch('./*.php').on('change', browserSync.reload);
+    gulp.watch('./**/*.php').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['watch', 'browser-sync']);
+
+gulp.task('default', ['browser-sync']);

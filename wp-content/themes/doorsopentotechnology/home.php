@@ -40,6 +40,12 @@ get_header();
 				</p>
 			</section>
 
+			<section class="get-involved-section content-wrapper">
+				<h2 class="get-involved-heading">Get Involved</h2>
+				<p class="get-involved-paragraph">Want to become a sponsor or attend an event?</p>
+				<a href="mailto:dot@inventaworld.com" class="get-involved-cta" target="_blank">Click Here</a>
+			</section>
+
 			<section class="featured-sponsors-section content-wrapper">
 				<h2 class="featured-sponsors-heading">Featured Sponsors</h2>
 
@@ -60,12 +66,6 @@ get_header();
 					<?php endforeach; wp_reset_postdata(); ?>
 				</ul>		
 
-			</section>
-
-			<section class="get-involved-section content-wrapper">
-				<h2 class="get-involved-heading">Get Involved</h2>
-				<p class="get-involved-paragraph">Want to become a sponsor or attend an event?</p>
-				<a href="mailto:dot@inventaworld.com" class="get-involved-cta" target="_blank">Click Here</a>
 			</section>
 			
 		</main><!-- #main -->

@@ -27,6 +27,23 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
+		<section class="event-agenda content-wrapper">
+			
+			<h3 class="sched-agenda-heading">Agenda</h3>
+			
+			<div class="sched-agenda">
+				<a id="sched-embed" href="//doorsopentotechnology2018.sched.com/" data-sched-sidebar="no">View the Doors Open to Technology schedule &amp; directory.</a>
+				<script type="text/javascript" src="//doorsopentotechnology2018.sched.com/js/embed.js"></script>
+			</div>
+
+		</section><!--.event-agenda-section -->
+
+		<section class="get-involved-section content-wrapper">
+			<h2 class="get-involved-heading">Get Involved</h2>
+			<p class="get-involved-paragraph">Want to become a sponsor or attend an event?</p>
+			<a href="mailto:dot@inventaworld.com" class="get-involved-cta" target="_blank">Click Here</a>
+		</section><!--.get-involved-section -->
+
 		<section class="sponsors-section content-wrapper">
 
 			<h3 class="event-sponsors">Sponsors</h3>

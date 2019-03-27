@@ -144,10 +144,6 @@
 	img {
 		max-width: 75%;
 		margin: 0 auto;
-
-		// @media screen and (min-width: $query__large) {
-		// 	max-width: 75%;
-		// }
 	}
 }
 
@@ -155,7 +151,7 @@
 # Single Event Styles
 --------------------------------------------------------------*/
 
-.entry-title, {
+.entry-title {
 	@extend %base-heading-style;
 
 	text-align: center;
@@ -181,7 +177,8 @@
 	}
 }
 
-.event-sponsors {
+.event-sponsors,
+.sched-agenda-heading {
 	@extend %base-heading-style;
 
 	font-size: 1.5rem;
@@ -210,7 +207,8 @@
 }
 
 .sched-agenda {
-	width: 80vw;
+	// height: auto;
+	// width: 80vw;
 	margin: 0 auto;
 }
 
