@@ -57,13 +57,13 @@ get_header();
 						</li>	
 					<?php endif; ?>
 
-					<?php if ( is_single( 'DOT | Vancouver' ) && has_tag( 'Diversity' ) ) : ?>
+					<?php if ( is_single( 'DOT | Diversity in Tech' ) && has_tag( 'Diversity' ) ) : ?>
 						<li class="sponsor">
 							<?php the_post_thumbnail(); ?>
 						</li>	
 					<?php endif; ?>
 
-					<?php if ( is_single( 'DOT | Vancouver' ) && has_tag( 'Interior' ) ) : ?>
+					<?php if ( is_single( 'DOT | Interior' ) && has_tag( 'Interior' ) ) : ?>
 						<li class="sponsor">
 							<?php the_post_thumbnail(); ?>
 						</li>	
