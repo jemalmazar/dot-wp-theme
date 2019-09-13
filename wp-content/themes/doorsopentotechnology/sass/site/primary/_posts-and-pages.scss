@@ -164,15 +164,20 @@
 }
 
 .entry-content {
-	margin: 0 !important;
+	width: 66%;
+	margin: 0 auto !important;
+	
+	h1,h2,h3,h4,h5,h6 {
+		@extend %base-heading-style;
+	}
 	
 	p { 
 		font-weight: 700;
-		text-align: center;
 		margin: 0;
 	}
 
 	@media screen and (min-width: $query__medium) {
+		width: 900px;
 		font-size: 1rem;
 	}
 }
@@ -206,11 +211,6 @@
 	
 }
 
-.sched-agenda {
-	// height: auto;
-	// width: 80vw;
-	margin: 0 auto;
-}
 
 /*------------------------------------------------------------*/
 
